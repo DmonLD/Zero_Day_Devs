@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zero Day Devs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <img src="images/logo.png" alt="Zero Day Devs Logo" class="logo">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Our Games 🎮</h2>
+      <div class="games">
+
+        <!-- Game 1: Ready -->
+        <div class="game-card" data-ready="true" data-game="Quiz Quest: Boss Battle" data-icon="images/game1-icon.png">
+          <div class="game-header">
+            <img src="images/game1-icon.png" alt="Game 1 Icon" class="game-icon">
+            <h3>Quiz Quest: Boss Battle</h3>
+          </div>
+          <div class="slideshow" data-slides>
+            <img src="images/game1-1.jpg" data-src="images/game1-1.jpg" alt="Game 1 Screenshot 1" class="active">
+            <img src="images/game1-2.jpg" data-src="images/game1-2.jpg" alt="Game 1 Screenshot 2">
+            <img src="images/game1-3.jpg" data-src="images/game1-3.jpg" alt="Game 1 Screenshot 3">
+          </div>
+          <p>An epic trivia game inspired by FromSoftware boss fights.</p>
+          <a href="https://play.google.com/store/apps/details?id=com.ZDD.Quiz_Quest_Boss_Battle" target="_blank" class="game-btn">Play / Download</a>
+        </div>
+
+        <!-- Game 2: Not ready -->
+        <div class="game-card" data-ready="false" data-game="?" data-icon="images/question.png">
+          <div class="game-header">
+            <img src="images/question.png" alt="Coming Soon Icon" class="game-icon">
+            <h3>?</h3>
+          </div>
+          <div class="slideshow" data-slides>
+            <img src="images/question.png" data-src="images/question.png" alt="Coming Soon" class="active">
+            <img src="images/question.png" data-src="images/question.png" alt="Coming Soon">
+            <img src="images/question.png" data-src="images/question.png" alt="Coming Soon">
+          </div>
+          <p>Coming Soon</p>
+          <a href="#" class="game-btn disabled">Coming Soon</a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Zero Day Devs. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Screenshot Popup Modal -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="popup-close">&times;</span>
+      <div class="popup-header">
+        <img src="" alt="Game Icon" class="popup-icon">
+        <h3 class="popup-title"></h3>
+      </div>
+      <img src="" alt="Full Screenshot" class="popup-img">
+      <span class="popup-prev">&#10094;</span>
+      <span class="popup-next">&#10095;</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
